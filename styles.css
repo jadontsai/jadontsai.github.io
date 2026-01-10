@@ -1,6 +1,6 @@
 :root {
-  --bg: #0f172a;          /* Navy background */
-  --surface: #111827;     /* Slightly lighter navy for cards */
+  --bg: #2edef2;          /* background */
+  --surface: #bde00d;     /* cards */
   --text: #e5e7eb;        /* Primary text */
   --muted: #9ca3af;       /* Secondary text */
   --accent: #3b82f6;      /* Blue accent */
