@@ -2,7 +2,7 @@
   --bg: #1a97ad;          /* background */
   --surface: #1e9915;     /* cards */
   --text: #e5e7eb;        /* Primary text */
-  --muted: #9ca3af;       /* Secondary text */
+  --muted: #fafcf9;       /* Secondary (card) text */
   --accent: #3b82f6;      /* accent */
   --border: #1f2937;      /* borders */
 }
