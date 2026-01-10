@@ -1,9 +1,10 @@
 :root {
-  --bg: #ffffff;
-  --text: #1f2933;
-  --muted: #6b7280;
-  --accent: #2563eb;
-  --border: #e5e7eb;
+  --bg: #0f172a;          /* Navy background */
+  --surface: #111827;     /* Slightly lighter navy for cards */
+  --text: #e5e7eb;        /* Primary text */
+  --muted: #9ca3af;       /* Secondary text */
+  --accent: #3b82f6;      /* Blue accent */
+  --border: #1f2937;      /* Subtle borders */
 }
 
 * {
@@ -12,13 +13,18 @@
   padding: 0;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* Links */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -28,6 +34,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Header */
 header {
   max-width: 900px;
   margin: 4rem auto 3rem;
@@ -35,50 +42,67 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
   font-size: 1.1rem;
   color: var(--muted);
-  max-width: 600px;
+  max-width: 650px;
 }
 
+/* Navigation */
 nav {
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 }
 
 nav a {
-  margin-right: 1.25rem;
+  margin-right: 1.5rem;
   font-weight: 500;
+  color: var(--text);
+  opacity: 0.85;
 }
 
+nav a:hover {
+  opacity: 1;
+}
+
+/* Main content */
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
+/* Sections */
 section {
   margin-bottom: 4rem;
 }
 
 section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: -0.01em;
 }
 
+/* Cards */
 .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.25rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
 }
 
 .card p {
@@ -86,6 +110,7 @@ section h2 {
   max-width: 700px;
 }
 
+/* Footer */
 footer {
   max-width: 900px;
   margin: 4rem auto 2rem;
@@ -93,10 +118,17 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
   text-align: center;
+  opacity: 0.8;
 }
 
+/* Mobile */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
   }
 }
