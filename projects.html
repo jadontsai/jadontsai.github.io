@@ -4,32 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header>
-    <h1>Projects</h1>
+<body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-2">Projects</h1>
+
+    <!-- Navigation -->
+    <nav class="mt-6 flex flex-wrap gap-6 text-slate-300">
+      <a href="index.html" class="hover:text-teal-400">Home</a>
+      <a href="about.html" class="hover:text-teal-400">About</a>
+      <a href="projects.html" class="text-teal-400 font-medium">Projects</a>
+      <a href="experience.html" class="hover:text-teal-400">Experience</a>
+      <a href="contact.html" class="hover:text-teal-400">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="card">
-      <h3>Project Title</h3>
-      <p>content</p>
+  <!-- Main content -->
+  <main class="max-w-4xl mx-auto px-6 pb-16 space-y-6">
+
+    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+      <p class="text-slate-300">
+        Content describing the project, your role, and the technologies used.
+      </p>
     </section>
 
-    <section class="card">
-      <h3>Another Project</h3>
-      <p>more content</p>
+    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Another Project</h3>
+      <p class="text-slate-300">
+        More content highlighting impact, outcomes, and skills.
+      </p>
     </section>
+
   </main>
 
 </body>
