@@ -4,38 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jadon Tsai</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header>
-    <h1>Jadon Tsai</h1>
-    <p class="subtitle">
+<body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-2">Jadon Tsai</h1>
+    <p class="text-slate-300 text-lg">
       2nd year biomedical engineering student at the University of Toronto
     </p>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="mt-6 flex flex-wrap gap-6 text-slate-300">
+      <a href="index.html" class="text-teal-400 font-medium">Home</a>
+      <a href="about.html" class="hover:text-teal-400">About</a>
+      <a href="projects.html" class="hover:text-teal-400">Projects</a>
+      <a href="experience.html" class="hover:text-teal-400">Experience</a>
+      <a href="contact.html" class="hover:text-teal-400">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Home</h2>
-      <p>
-        Hello! I'm Jadon, a second year engineering science student majoring in biomedical engineering at UofT. Course descriptions for required program courses can be viewed 
-        <a href="https://engineering.calendar.utoronto.ca/section/Engineering-Science">here</a>.        
-        In addition to the core courses, I have audited/taken courses in physiology and biomedical imaging with a focus in MRI. I am currently taking courses in molecular cardiology and microprocessors/microcontrollers. Course notes
-        for extra coruses can be viewed 
-        <a href="https://github.com/jadontsai/school-notes">here</a>.                
-        Outside of school, I'm currently working with the university of toronto biomed design team (UTBIOME) to build a vortex droplet generator as part of an AST mircoscope. I'm also a member of the 
-        <a href="https://www.instagram.com/skuledragonboat/">Iron Dragons</a>                
-        dragon boat team that placed second nationally at the 2024 Canadian National championships. 
-        On good weather weekends, I work as a line pilot at the Borden cadet flying site, as well as part time as a ground school instructor with Air Cadets Canada.
+  <!-- Main content -->
+  <main class="max-w-4xl mx-auto px-6 pb-16">
+    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-4">Home</h2>
+
+      <p class="text-slate-300 space-y-4">
+        Hello! I'm Jadon, a second-year Engineering Science student majoring in
+        biomedical engineering at the University of Toronto. Course descriptions
+        for required program courses I've taken can be viewed
+        <a
+          href="https://engineering.calendar.utoronto.ca/section/Engineering-Science"
+          class="text-teal-400 hover:underline"
+        >
+          here
+        </a>.
+        In addition to the core courses, I have audited or taken courses in
+        physiology and biomedical imaging with a focus on MRI. I am currently
+        taking courses in molecular cardiology and microprocessors/microcontrollers.
+        Course notes for additional courses can be viewed
+        <a
+          href="https://github.com/jadontsai/school-notes"
+          class="text-teal-400 hover:underline"
+        >
+          here
+        </a>.
+      </p>
+
+      <p class="text-slate-300 mt-4">
+        Outside of school, I am currently working with the University of Toronto
+        Biomedical Engineering Design Team (UTBIOME) to build a vortex droplet
+        generator as part of an AST microscope. I am also a member of the
+        <a
+          href="https://www.instagram.com/skuledragonboat/"
+          class="text-teal-400 hover:underline"
+        >
+          Iron Dragons
+        </a>
+        dragon boat team, which placed second nationally at the 2024 Canadian
+        National Championships.
+      </p>
+
+      <p class="text-slate-300 mt-4">
+        On good weather weekends, I work as a line pilot at the Borden Cadet Flying
+        Site, as well as part-time as a ground school instructor with Air Cadets
+        Canada.
       </p>
     </section>
   </main>
