@@ -27,11 +27,88 @@
 
   <!-- Main content -->
   <main class="max-w-4xl mx-auto px-6 pb-16 space-y-6">
+    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Person tracking trashcan</h3>
+      <p class="text-slate-300">
+        This was a group project for an embedded systems course (MIE438). The premise of the project was to have a trashcan following you around using computer vision; we used an STM32 NUCLEO WB55RG board as our 
+        microcontroller, and used a phone to capture video that was then processed with OpenCV and sent to the microcontroller through BLE.
+        Code available 
+        <a
+          href="https://github.com/jadontsai/MIE438-project"
+          class="text-teal-400 hover:underline"
+        >
+          here.
+        </a>
+        Presentation video 
+        <a
+          href="https://youtu.be/g225xacvSuM"
+          class="text-teal-400 hover:underline"
+        >
+          here.
+        </a>
+<figure class="max-w-xl mx-auto text-center">
+  <div class="flex gap-4">
+    <img
+      src="images/trashcan_side.jpg"
+      alt="The completed trashcan prototype"
+      class="w-1/2 rounded-lg"
+    />
+    <img
+      src="images/trashcan_top.jpg"
+      alt="Top view of our (very messy) electronics"
+      class="w-1/2 rounded-lg"
+    />
+  </div>
+  
+  <figcaption class="text-sm text-slate-400 mt-2">
+   Our completed prototype (with very messy electronics).
+  </figcaption>
+</figure>
+      </p>
+    </section>
 
+        <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Automated home cooling system</h3>
+      <p class="text-slate-300">
+        This project is to address energy use in Ghana as part of an engineering design course (ESC204). It's pretty much a smart thermostat that controls windows to take advantage of convective cooling,
+        we have a few sensors that feed into a PID control loop that selectively opens windows to a certain extent. A lot of the work in this project was focused on the engineering design process itself, which 
+        can be seen in our <a
+          href="https://drive.google.com/drive/folders/12hvthFm7mQOzJHJhr-Ws-R6pF-YrMbUJ?usp=drive_link"
+          class="text-teal-400 hover:underline"
+        >
+          design portfolio.
+        </a>. We also did <a
+          href="https://youtu.be/qM1bfTjzzWc"
+          class="text-teal-400 hover:underline"
+        >
+          smoke testing!
+        </a>
+        Control and sensor code available 
+        <a
+          href="https://github.com/PRU1/praxis_iii"
+          class="text-teal-400 hover:underline"
+        >
+          here.
+        </a>
+            <figure class="max-w-xl mx-auto text-center">
+      <img
+        src="images/praxis_house_side.jpg"
+        alt="Praxis house side view."
+        class="w-full rounded-lg mb-2"
+      />
+    
+      <figcaption class="text-sm text-slate-400">
+        Our semi-functional prototype on demo day.
+      </figcaption>
+      </p>
+
+    </figure>  
+      </p>
+    </section>
     <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
       <h3 class="text-xl font-semibold mb-2">Automated fiber coupling system</h3>
       <p class="text-slate-300">
-        My most recent project was working on a system to automate fiber coupling for a relatively simple laser setup. This project was part of a differential equations course but didn't really use diffential equations;
+        This project was for a system to automate fiber coupling for a relatively simple laser setup. This project was part of a differential equations course but didn't really use diffential equations;
         instead the key idea was to use a variant of the Nedler-Mead (simplex) method for finding peaks for maximum power transfer. 
         Code available 
         <a
