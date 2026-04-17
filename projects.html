@@ -4,298 +4,229 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-[#06ad9f] text-slate-100 font-sans leading-relaxed">
+<body>
+  <div class="page">
+    <header>
+      <h1>Projects</h1>
 
-  <!-- Header -->
-  <header class="max-w-4xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold mb-2">Projects</h1>
+      <p class="nav">
+        <a href="index.html">Home</a> /
+        <a href="notes.html">Notes</a> /
+        <a href="projects.html">Projects</a> /
+        <a href="experience.html">Experience</a> /
+        <a href="contact.html">Contact</a>
+      </p>
+    </header>
 
-    <!-- Navigation -->
-    <nav class="mt-6 flex flex-wrap gap-6 text-slate-300">
-      <a href="index.html" class="hover:text-teal-400">Home</a>
-      <a href="notes.html" class="hover:text-teal-400">Course notes</a>
-      <a href="projects.html" class="text-teal-400 font-medium">Projects</a>
-      <a href="experience.html" class="hover:text-teal-400">Experience</a>
-      <a href="contact.html" class="hover:text-teal-400">Contact</a>
-    </nav>
-  </header>
+    <hr />
 
-  <!-- Main content -->
-  <main class="max-w-4xl mx-auto px-6 pb-16 space-y-6">
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Person tracking trashcan</h3>
-      <p class="text-slate-300">
-        This was a group project for an embedded systems course (MIE438). The premise of the project was to have a trashcan following you around using computer vision; we used an STM32 NUCLEO WB55RG board as our 
-        microcontroller, and used a phone to capture video that was then processed with OpenCV and sent to the microcontroller through BLE.
-        Code available 
-        <a
-          href="https://github.com/jadontsai/MIE438-project"
-          class="text-teal-400 hover:underline"
-        >
-          here.
-        </a>
-        Presentation video 
-        <a
-          href="https://youtu.be/g225xacvSuM"
-          class="text-teal-400 hover:underline"
-        >
-          here.
-        </a>
-<figure class="max-w-xl mx-auto text-center">
-  <div class="flex gap-4">
-    <img
-      src="images/trashcan_side.jpg"
-      alt="The completed trashcan prototype"
-      class="w-1/2 rounded-lg"
-    />
-    <img
-      src="images/trashcan_top.jpg"
-      alt="Top view of our (very messy) electronics"
-      class="w-1/2 rounded-lg"
-    />
-  </div>
-  
-  <figcaption class="text-sm text-slate-400 mt-2">
-   Our completed prototype (with very messy electronics).
-  </figcaption>
-</figure>
-      </p>
-    </section>
+    <main>
+      <h2>Selected Projects</h2>
 
-        <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Automated home cooling system</h3>
-      <p class="text-slate-300">
-        This project is to address energy use in Ghana as part of an engineering design course (ESC204). It's pretty much a smart thermostat that controls windows to take advantage of convective cooling,
-        we have a few sensors that feed into a PID control loop that selectively opens windows to a certain extent. A lot of the work in this project was focused on the engineering design process itself, which 
-        can be seen in our <a
-          href="https://drive.google.com/drive/folders/12hvthFm7mQOzJHJhr-Ws-R6pF-YrMbUJ?usp=drive_link"
-          class="text-teal-400 hover:underline"
-        >
-          design portfolio.
-        </a>. We also did <a
-          href="https://youtu.be/qM1bfTjzzWc"
-          class="text-teal-400 hover:underline"
-        >
-          smoke testing!
-        </a>
-        Control and sensor code available 
-        <a
-          href="https://github.com/PRU1/praxis_iii"
-          class="text-teal-400 hover:underline"
-        >
-          here.
-        </a>
-            <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/praxis_house_side.jpg"
-        alt="Praxis house side view."
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        Our semi-functional prototype on demo day.
-      </figcaption>
+      <h3>Tracking trashcan</h3>
+      <p>
+        This was a group project for an embedded systems course (MIE438). The
+        premise of the project was to have a trashcan follow you around using
+        computer vision. We used an STM32 NUCLEO WB55RG board as our
+        microcontroller, and used a phone to capture video that was then
+        processed with OpenCV and sent to the microcontroller through BLE.
       </p>
+      <p>
+        Code available
+        <a href="https://github.com/jadontsai/MIE438-project">here</a>.
+        Presentation video
+        <a href="https://youtu.be/g225xacvSuM">here</a>.
+      </p>
+      <figure>
+        <div class="image-row">
+          <img
+            src="images/trashcan_side.jpg"
+            alt="The completed trashcan prototype"
+            class="photo split-photo"
+          />
+          <img
+            src="images/trashcan_top.jpg"
+            alt="Top view of the electronics"
+            class="photo split-photo"
+          />
+        </div>
+        <figcaption>Our completed prototype (with very messy electronics).</figcaption>
+      </figure>
 
-    </figure>  
+      <h3>Automated home cooling system</h3>
+      <p>
+        This project was developed to address energy use in Ghana as part of an
+        engineering design course (ESC204). It is essentially a smart thermostat
+        that controls windows to take advantage of convective cooling. We used
+        sensors feeding into a PID control loop that selectively opens windows
+        to a certain extent.
       </p>
-    </section>
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Automated fiber coupling system</h3>
-      <p class="text-slate-300">
-        This project was for a system to automate fiber coupling for a relatively simple laser setup. This project was part of a differential equations course but didn't really use diffential equations;
-        instead the key idea was to use a variant of the Nedler-Mead (simplex) method for finding peaks for maximum power transfer. 
-        Code available 
-        <a
-          href="https://github.com/jadontsai/fiber_coupling_mat292"
-          class="text-teal-400 hover:underline"
-        >
-          here.
-        </a>
-            <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/fiber_coupling.jpg"
-        alt="The fiber coupling system"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        The fiber coupling system on the optical table.
-      </figcaption>
+      <p>
+        A lot of the work in this project was focused on the engineering design
+        process itself, which can be seen in our
+        <a href="https://drive.google.com/drive/folders/12hvthFm7mQOzJHJhr-Ws-R6pF-YrMbUJ?usp=drive_link">design portfolio</a>.
+        We also did
+        <a href="https://youtu.be/qM1bfTjzzWc">smoke testing</a>.
+        Control and sensor code is available
+        <a href="https://github.com/PRU1/praxis_iii">here</a>.
       </p>
+      <figure>
+        <img
+          src="images/praxis_house_side.jpg"
+          alt="Praxis house side view"
+          class="photo"
+        />
+        <figcaption>Our semi-functional prototype on demo day.</figcaption>
+      </figure>
 
-    </figure>  
+      <h3>Automated fiber coupling system</h3>
+      <p>
+        This project was for a system to automate fiber coupling for a relatively
+        simple laser setup. It was part of a differential equations course, but
+        the main idea ended up being to use a variant of the Nelder-Mead simplex
+        method to find peaks for maximum power transfer.
       </p>
-    </section>
-    
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Vortex droplet generator</h3>
-      <p class="text-slate-300">
-        Currently in progress! Pictures will be updated as the project progresses (they're currently of a very early design phase). Working on creating a vortexer to create droplets for an AST microscope. This involves 3D modelling and embedded code for the actual vortexer (we're trying to make it from
-        scratch), and a bit of chemistry for the droplet generation.
-<figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/biome_cfd.png"
-        alt="A quick and dirty CFD analysis to determine the velocity at different points in our homemade test tube."
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        A quick and dirty CFD analysis to determine the velocity at different points in our homemade test tube.
-      </figcaption>
+      <p>
+        Code available
+        <a href="https://github.com/jadontsai/fiber_coupling_mat292">here</a>.
       </p>
+      <figure>
+        <img
+          src="images/fiber_coupling.jpg"
+          alt="The fiber coupling system"
+          class="photo"
+        />
+        <figcaption>The fiber coupling system on the optical table.</figcaption>
+      </figure>
 
-    </figure>  
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/biome_cad.png"
-        alt="A VERY rough sketch of what the final design will look like."
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        A VERY rough sketch of what the final design will look like.
-      </figcaption>
+      <h3>Vortex droplet generator</h3>
+      <p>
+        Currently in progress. I am working on creating a vortexer to generate
+        droplets for an AST microscope. This involves 3D modelling, embedded
+        code for the actual vortexer, and some chemistry for the droplet
+        generation.
       </p>
+      <figure>
+        <img
+          src="images/biome_cfd.png"
+          alt="CFD analysis for the droplet generator test tube"
+          class="photo"
+        />
+        <figcaption>
+          A quick CFD analysis to determine the velocity at different points in
+          our homemade test tube.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/biome_cad.png"
+          alt="Rough sketch of the final design"
+          class="photo"
+        />
+        <figcaption>A rough sketch of what the final design may look like.</figcaption>
+      </figure>
 
-    </figure> 
+      <h3>Crop residue detection</h3>
+      <p>
+        I was part of an aerospace design team that was trying to launch a
+        satellite to measure crop residue. We tried several statistical analysis
+        methods and also did some machine learning. We presented our results at
+        the 46th Canadian Remote Sensing Symposium in Lethbridge.
       </p>
-    </section>
-    
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Crop residue detection</h3>
-      <p class="text-slate-300">
-        I was part of an aerospace design team that was trying to launch a satellite to measure crop residue.
-        We tried a bunch of different statistical analysis methods and also did some machine learning; we presented our results at
-        the 46th Canadian remote sensing symposium in Lethbridge.
-        As per licensing agreements, I'm unable to share most of the code as of right now, but feel free to         
-        <a
-          href="https://jadontsai.github.io/contact.html"
-          class="text-teal-400 hover:underline"
-        >
-          reach out
-        </a>
-        if you have any questions about it!
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/stand_poster.jpg"
-        alt="Me doing the usual awkward stand beside poster picture."
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-          Me doing the usual awkward stand beside poster picture .
-      </figcaption>
-        <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/utat_img"
-        alt="Our poster!"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-          Our poster!
-      </figcaption>
+      <p>
+        As per licensing agreements, I am unable to share most of the code as of
+        right now, but feel free to <a href="contact.html">reach out</a> if you
+        have any questions about it.
       </p>
+      <figure>
+        <img
+          src="images/stand_poster.jpg"
+          alt="Standing beside the project poster"
+          class="photo"
+        />
+        <figcaption> Me doing the usual "awkward stand beside poster" picture.
+</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/utat_img"
+          alt="Project poster"
+          class="photo"
+        />
+        <figcaption>Our poster.</figcaption>
+      </figure>
 
-    </figure> 
+      <h3>Lego sorter (Praxis II)</h3>
+      <p>
+        Our first-year design course had us making an automated Lego sorting
+        device.
+        <a href="https://github.com/jadontsai/praxis-2-prototypes">Here</a>
+        is some Python and HTML that I used to prototype the front end of our
+        design.
       </p>
-    </section>
-
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Lego sorter (praxis II)</h3>
-      <p class="text-slate-300"> 
-        Our first year design course had us making an automated lego sorting device. 
-        <a
-          href="https://github.com/jadontsai/praxis-2-prototypes"
-          class="text-teal-400 hover:underline"
-        >
-          Here's
-        </a> a bit of python and HTML that I used to prototype the front end of our design.
-
-         <a
-          href="https://github.com/jadontsai/3D-models"
-          class="text-teal-400 hover:underline"
-        >
-          Here's
-        </a>
-        a few of the 3D models I made (mostly in solidworks) for our project.
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/THE LEGO SORTER.jpg"
-        alt="Our poster that we presented at the end of semester presentation day"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-          Our poster that we presented at the end of semester presentation day.
-      </figcaption>
+      <p>
+        <a href="https://github.com/jadontsai/3D-models">Here</a>
+        are some of the 3D models I made, mostly in SolidWorks, for the project.
       </p>
-    </section>
-      
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Other first year projects</h3>
-      <p class="text-slate-300">
-        The most fun project of first year was by far our bridge design competition. Code and images are available 
-                <a
-          href="https://github.com/epsilon-naut/CIV102-Bridge-Project"
-          class="text-teal-400 hover:underline"
-        >
-          here.
-        </a> Our actual bridge design failed miserably in testing (luckily there were 
+      <figure>
+        <img
+          src="images/THE LEGO SORTER.jpg"
+          alt="Poster presented at the end-of-semester presentation day"
+          class="photo"
+        />
+        <figcaption>
+          Our poster from the end-of-semester presentation day.
+        </figcaption>
+      </figure>
+
+      <h3>Other first-year projects</h3>
+      <p>
+        The most fun project of first year was by far our bridge design
+        competition. Code and images are available
+        <a href="https://github.com/epsilon-naut/CIV102-Bridge-Project">here</a>.
+        Our actual bridge design failed miserably in testing (luckily there were 
         no casualties), but it was a lot of fun to build and a lot of engineering lessons were learned.
-        
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/bridge_test.jpg"
-        alt="Bridge testing day with Prof. Bentz"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-          Bridge testing day with Prof. Bentz
-      </figcaption>
       </p>
+      <figure>
+        <img
+          src="images/bridge_test.jpg"
+          alt="Bridge testing day with Prof. Bentz"
+          class="photo"
+        />
+        <figcaption>Bridge testing day with Prof. Bentz.</figcaption>
+      </figure>
 
-    </figure>
+      <p>
+        Another interesting project from first year was the
+        <a href="https://github.com/jadontsai/phy180pendulumproject">pendulum project</a>,
+        where I used Python data analysis tools to model a flashlight as a
+        pendulum.
       </p>
-      <p class="text-slate-300">
-        Another interesting project from first year was the 
-                <a
-          href="https://github.com/jadontsai/phy180pendulumproject"
-          class="text-teal-400 hover:underline"
-        >
-          pendulum project
-        </a>, where I used some python data analysis tools to model a flashlight as a pendulum.
-        
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/pendulum.jpg"
-        alt="The makeshift pendulum"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-          The makeshift pendulum.
-      </figcaption>
-      </p>
+      <figure>
+        <img
+          src="images/pendulum.jpg"
+          alt="The makeshift pendulum"
+          class="photo"
+        />
+        <figcaption>The makeshift pendulum.</figcaption>
+      </figure>
 
-    </figure>
+      <h3>Personal coding projects</h3>
+      <p>
+        Still under development. I am currently working on an OCR pipeline to
+        digitize my flying logbooks, as well as a few embedded system designs to
+        make life around the house easier.
       </p>
-    </section>
-    
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Personal coding projects</h3>
-      <p class="text-slate-300">
-        Still under completion! Currently working on an OCR pipeline to digitize my flying logbooks as well as a few random embedded system designs to make life around the house easier.
-      </p>
-    </section>
-  </main>
+    </main>
 
+    <hr />
+
+    <footer>
+      <p class="footer">Last updated: April 2026</p>
+    </footer>
+  </div>
 </body>
 </html>

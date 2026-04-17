@@ -4,103 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jadon Tsai</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-[#06ad9f] text-slate-100 font-sans leading-relaxed">
-
-  <!-- Header -->
-  <header class="max-w-4xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold mb-2">Jadon Tsai</h1>
-    <p class="text-slate-300 text-lg">
-      2nd year biomedical engineering student at the University of Toronto
-    </p>
-
-    <!-- Navigation -->
-    <nav class="mt-6 flex flex-wrap gap-6 text-slate-300">
-      <a href="index.html" class="text-teal-400 font-medium">Home</a>
-      <a href="notes.html" class="hover:text-teal-400">Course notes</a>
-      <a href="projects.html" class="hover:text-teal-400">Projects</a>
-      <a href="experience.html" class="hover:text-teal-400">Experience</a>
-      <a href="contact.html" class="hover:text-teal-400">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main class="max-w-4xl mx-auto px-6 pb-16">
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h2 class="text-xl font-semibold mb-4">Home</h2>
-
-      <p class="text-slate-300 space-y-4">
-        Hello! I'm Jadon, a second-year Engineering Science student majoring in
-        biomedical engineering at the University of Toronto. Course descriptions
-        for required program courses I've taken can be viewed
-        <a
-          href="https://engineering.calendar.utoronto.ca/section/Engineering-Science"
-          class="text-teal-400 hover:underline"
-        >
-          here
-        </a>.
-        In addition to the core courses, I have audited or taken courses in
-        physiology and biomedical imaging with a focus on MRI. I am currently
-        taking courses in molecular cardiology and microprocessors/microcontrollers.
-        Course notes for additional courses can be viewed
-        <a
-          href="https://github.com/jadontsai/school-notes"
-          class="text-teal-400 hover:underline"
-        >
-          here
-        </a>.
+<body>
+  <div class="page">
+    <header>
+      <h1>Jadon Tsai</h1>
+      <p class="tagline">
+        2nd year Machine Intelligence student at the University of Toronto
       </p>
 
-      <p class="text-slate-300 mt-4">
+      <p class="nav">
+        <a href="index.html">Home</a> /
+        <a href="notes.html">Notes</a> /
+        <a href="projects.html">Projects</a> /
+        <a href="experience.html">Experience</a> /
+        <a href="contact.html">Contact</a>
+      </p>
+    </header>
+
+    <hr />
+
+    <main>
+      <h2>Home</h2>
+
+      <p>
+        Hello! I'm Jadon, a second-year Engineering Science student majoring in
+        Machine Intelligence at the University of Toronto. My current interest is
+         in working with machine learning in medical imaging.
+        Course descriptions
+        for required program courses I've taken can be viewed
+        <a href="https://engineering.calendar.utoronto.ca/section/Engineering-Science">here</a>.
+        In addition to the core courses, I have audited or taken courses in
+        physiology, embedded systems, and biomedical imaging with a focus on MRI.
+        Course notes for additional courses
+        can be viewed
+        <a href="https://github.com/jadontsai/school-notes">here</a>.
+      </p>
+
+      <p>
         Outside of school, I am currently working with the University of Toronto
         Biomedical Engineering Design Team (UTBIOME) to build a vortex droplet
-        generator as part of an AST microscope. I am also a member of the
-        <a
-          href="https://www.instagram.com/skuledragonboat/"
-          class="text-teal-400 hover:underline"
-        >
-          Iron Dragons
-        </a>
-        dragon boat team, which placed second nationally at the 2024 Canadian
-        National Championships.
-        <br>
-        On good weather weekends, I work as a line pilot at the Borden Cadet Flying
-        Site, as well as part-time as a ground school instructor with Air Cadets
-        Canada. I enjoy playing intramural softball and despite being from (near) Toronto, I'm an avid Habs fan.
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/islands_paddling.jpg"
-        alt="Paddling at the Toronto International Dragon Boat Race Festival (photo credits: Iron Dragons)"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        Paddling at the Toronto International Dragon Boat Race Festival (photo credits: Iron Dragons)
-      </figcaption>
+        generator as part of an AST microscope.
       </p>
 
+      <p>
+        I am also a member of the
+        <a href="https://www.instagram.com/skuledragonboat/">Iron Dragons</a>
+        dragon boat team, which placed second nationally at the 2025 Canadian
+        National Championships.
+      </p>
+
+      <p>
+        On good weather weekends, I work as a line pilot at the Borden Cadet
+        Flying Site, as well as part-time as a ground school instructor with
+        Air Cadets Canada. I enjoy playing intramural softball and, despite
+        being from near Toronto, I'm an avid Habs fan.
+      </p>
+
+      <figure>
+        <img
+          src="images/islands_paddling.jpg"
+          alt="Paddling at the Toronto International Dragon Boat Race Festival"
+          class="photo"
+        />
+        <figcaption>
+          Paddling at the Toronto International Dragon Boat Race Festival
+          (photo credits: Iron Dragons)
+        </figcaption>
       </figure>
 
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/humber_oc.jpg"
-        alt="Paddling up the Humber river"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        Paddling up the Humber river
-      </figcaption>
-      </p>
+      <figure>
+        <img
+          src="images/humber_oc.jpg"
+          alt="Paddling up the Humber River"
+          class="photo"
+        />
+        <figcaption>Paddling up the Humber River</figcaption>
+      </figure>
+    </main>
 
-    </figure>
-  </section>
+    <hr />
 
-  </main>
-
+    <footer>
+      <p class="footer">Last updated: April 2026</p>
+    </footer>
+  </div>
 </body>
 </html>

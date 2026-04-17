@@ -4,109 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-[#06ad9f] text-slate-100 font-sans leading-relaxed">
+<body>
+  <div class="page">
+    <header>
+      <h1>Experience</h1>
 
-  <!-- Header -->
-  <header class="max-w-4xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold mb-2">Experience</h1>
-
-    <!-- Navigation -->
-    <nav class="mt-6 flex flex-wrap gap-6 text-slate-300">
-      <a href="index.html" class="hover:text-teal-400">Home</a>
-      <a href="notes.html" class="hover:text-teal-400">Course notes</a>
-      <a href="projects.html" class="hover:text-teal-400">Projects</a>
-      <a href="experience.html" class="text-teal-400 font-medium">Experience</a>
-      <a href="contact.html" class="hover:text-teal-400">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main class="max-w-4xl mx-auto px-6 pb-16 space-y-6">
-
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Flying</h3>
-      <p class="text-slate-300">
-      My most recent employment is as a Civilian Instructor with the 
-        <a
-          href="https://www.canada.ca/en/department-national-defence/services/cadets-junior-canadian-rangers/cadets/what-we-do/air.html"
-          class="text-teal-400 hover:underline"
-        >
-          Royal Canadian Air Cadets,
-        </a>
-        where I work as a familiarization pilot, taking youth up for short but really cool and unique glider flights. I also volunteer as a ground school instructor, where I teach the academic portion of flight training.
-        I am also a certified 
-                <a
-          href="https://ised-isde.canada.ca/site/professional-radio-operator-certificate-services/en/accredited-examiners"
-          class="text-teal-400 hover:underline"
-        >
-          ROC-A examiner.
-        </a>
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/glider.jpg"
-        alt="A rainy day at the airport."
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        A rainy day at the airport.
-      </figcaption>
+      <p class="nav">
+        <a href="index.html">Home</a> /
+        <a href="notes.html">Notes</a> /
+        <a href="projects.html">Projects</a> /
+        <a href="experience.html">Experience</a> /
+        <a href="contact.html">Contact</a>
       </p>
+    </header>
 
-    </figure>
+    <hr />
+
+    <main>
+      <h2>Experience</h2>
+
+      <h3>Flying</h3>
+      <p>
+        My most recent employment is as a Civilian Instructor with the
+        <a href="https://www.canada.ca/en/department-national-defence/services/cadets-junior-canadian-rangers/cadets/what-we-do/air.html">
+          Royal Canadian Air Cadets
+        </a>,
+        where I work as a familiarization pilot, taking youth up for short but
+        memorable glider flights.
       </p>
-    </section>
+      <p>
+        I also volunteer as a ground school instructor, where I teach the
+        academic portion of flight training. I am also a certified
+        <a href="https://ised-isde.canada.ca/site/professional-radio-operator-certificate-services/en/accredited-examiners">
+          ROC-A examiner
+        </a>.
+      </p>
+      <figure>
+        <img
+          src="images/glider.jpg"
+          alt="A rainy day at the airport"
+          class="photo"
+        />
+        <figcaption>A rainy day at the airport.</figcaption>
+      </figure>
 
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Volunteering</h3>
-      <p class="text-slate-300">
-      In addition to my experience as a volunteer ground school instructor and tutor, I've also been an active volunteer in the Engineering Science division.
-      I've volunteered at events such as the Ontario University Fair and the on-campus Welcome to Engineering Day. I've also been a techincal volunteer at ESEC, a conference where speakers such as Robert Thirsk
+      <h3>Volunteering</h3>
+      <p>
+        In addition to my experience as a volunteer ground school instructor
+        and tutor, I have also been an active volunteer in the division of Engineering
+        Science.
+      </p>
+      <p>
+        I have volunteered at events such as the Ontario University Fair and
+        the on-campus Welcome to Engineering Day. I have also been a technical
+        volunteer at ESEC, an in school conference where speakers such as Robert Thirsk
         come talk to engineering students.
-      <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/robert_thirsk_talk_2.jpg"
-        alt="Volunteering at Robert Thirsk's talk at ESEC 2025."
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        Volunteering at Robert Thirsk's talk at ESEC 2025.
-      </figcaption>
+      </p>
+      <figure>
+        <img
+          src="images/robert_thirsk_talk_2.jpg"
+          alt="Volunteering at Robert Thirsk's talk at ESEC 2025"
+          class="photo"
+        />
+        <figcaption>
+          Volunteering at Robert Thirsk's talk at ESEC 2025.
+        </figcaption>
+      </figure>
+
+      <h3>Certifications</h3>
+      <p>
+        I have collected a few useful certifications here and there. These
+        include, but are not limited to, French language proficiency
+        <a href="https://www.alliance-francaise.ca/en/exams/diplomas/delf">
+          (DELF B2)
+        </a>,
+        Standard First Aid with CPR-C, and laser safety training at U of T.
       </p>
 
-    </figure>
+      <h3>Contests</h3>
+      <p>
+        Section to be filled soon! (I did write 
+        half the Putnam (I had another exam that morning)
+         in 2024 and got a score that was 1 point above the
+          median (which was like 2), but that's about it)
+
       </p>
-    </section>
+    </main>
 
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Certifications</h3>
-      <p class="text-slate-300">
-        I've collected a few useful certifications here and there. These include but are not limited to: french language proficiency         
-        <a
-          href="https://www.alliance-francaise.ca/en/exams/diplomas/delf"
-          class="text-teal-400 hover:underline"
-        >
-          (DELF B2),
-        </a>
-        standard first aid with CPR-C, and Laser safety training at UofT.
-      </p>
-    </section>
-    
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Contests</h3>
-      <p class="text-slate-300">
-        Section to be filled soon! (I did write half the Putnam (I had another exam that morning) in 2024 and got a score that was 1 point above the median (which was like 2), but that's about it)
-      </p>
-    </section>
+    <hr />
 
-
-  </main>
-
+    <footer>
+      <p class="footer">Last updated: April 2026</p>
+    </footer>
+  </div>
 </body>
 </html>

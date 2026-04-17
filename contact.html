@@ -4,95 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-[#06ad9f] text-slate-100 font-sans leading-relaxed">
+<body>
+  <div class="page">
+    <header>
+      <h1>Contact</h1>
 
-  <!-- Header -->
-  <header class="max-w-4xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold mb-2">Contact</h1>
+      <p class="nav">
+        <a href="index.html">Home</a> /
+        <a href="notes.html">Notes</a> /
+        <a href="projects.html">Projects</a> /
+        <a href="experience.html">Experience</a> /
+        <a href="contact.html">Contact</a>
+      </p>
+    </header>
 
-    <!-- Navigation -->
-    <nav class="mt-6 flex flex-wrap gap-6 text-slate-300">
-      <a href="index.html" class="hover:text-teal-400">Home</a>
-      <a href="notes.html" class="hover:text-teal-400">Course notes</a>
-      <a href="projects.html" class="hover:text-teal-400">Projects</a>
-      <a href="experience.html" class="hover:text-teal-400">Experience</a>
-      <a href="contact.html" class="text-teal-400 font-medium">Contact</a>
-    </nav>
-  </header>
+    <hr />
 
-  <!-- Main content -->
-  <main class="max-w-4xl mx-auto px-6 pb-16">
-    <section class="bg-slate-800 border border-slate-700 rounded-xl p-6 space-y-4">
+    <main>
+      <h2>Contact</h2>
+
       <p>
-      Personal email is the most reliable way to reach me, I generally respond to emails on the same day.
+        Personal email is the most reliable way to reach me. I generally
+        respond to emails on the same day.
       </p>
+
       <p>
-        Personal Email:
-        <a
-          href="mailto:jadon.tsai@mail.utoronto.ca"
-          class="text-teal-400 hover:underline"
-        >
-          jadon.tsai@mail.utoronto.ca
-        </a>
+        Personal email:
+        <a href="mailto:jadon.tsai@mail.utoronto.ca">jadon.tsai@mail.utoronto.ca</a>
       </p>
+
       <p>
-        Work Email:
-        <a
-          href="mailto:jadon.tsai@cadets.gc.ca"
-          class="text-teal-400 hover:underline"
-        >
-          jadon.tsai@cadets.gc.ca
-        </a>
+        Work email:
+        <a href="mailto:jadon.tsai@cadets.gc.ca">jadon.tsai@cadets.gc.ca</a>
       </p>
+
       <p>
         GitHub:
-        <a
-          href="https://github.com/jadontsai"
-          class="text-teal-400 hover:underline"
-        >
-          github.com/jadontsai
-        </a>
+        <a href="https://github.com/jadontsai">github.com/jadontsai</a>
       </p>
 
       <p>
         LinkedIn:
-        <a
-          href="https://linkedin.com/in/jadontsai"
-          class="text-teal-400 hover:underline"
-        >
-          linkedin.com/in/jadontsai
-        </a>
+        <a href="https://linkedin.com/in/jadontsai">linkedin.com/in/jadontsai</a>
       </p>
-    <p>
-    I'm supposed to include photos of myself here so here's a couple random ones.
-    <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/pfp.jpg"
-        alt="Me right before organizing a massive capture the flag game a few years ago"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        Me right before organizing a massive capture the flag game a few years ago
-      </figcaption>
-          <figure class="max-w-xl mx-auto text-center">
-      <img
-        src="images/IMG_1851.PNG"
-        alt="Me getting my hat signed by Commander of the Royal Canadian Air Force Lieutenant-General Jamie Speiser-Blanchet (photo credits: Air Cadets Canada)"
-        class="w-full rounded-lg mb-2"
-      />
-    
-      <figcaption class="text-sm text-slate-400">
-        Me getting my hat signed by Commander of the Royal Canadian Air Force Lieutenant-General Jamie Speiser-Blanchet (photo credits: Air Cadets Canada)
-      </figcaption>
-    </p>
-    </section>
-  </main>
 
+      <h2>Photos</h2>
+
+      <p>
+        I am apparently supposed to include photos of myself here, so here are
+        a couple.
+      </p>
+
+      <figure>
+        <img
+          src="images/pfp.jpg"
+          alt="Me right before organizing a massive capture the flag game a few years ago"
+          class="photo"
+        />
+        <figcaption>
+          Me right before organizing a massive capture the flag game a few years ago.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/IMG_1851.PNG"
+          alt="Me getting my hat signed by Lieutenant-General Jamie Speiser-Blanchet"
+          class="photo"
+        />
+        <figcaption>
+          Me getting my hat signed by Lieutenant-General Jamie Speiser-Blanchet
+          (photo credits: Air Cadets Canada).
+        </figcaption>
+      </figure>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p class="footer">Last updated: April 2026</p>
+    </footer>
+  </div>
 </body>
 </html>

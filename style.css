@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background: #f3ffd5;
+  color: #111111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 0.25rem 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0.2rem;
+}
+h3 {
+  font-size: 1.05rem;
+  font-weight: normal;
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.image-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 0.4rem;
+}
+
+.split-photo {
+  width: calc(50% - 6px);
+}
+
+p {
+  margin: 0.9rem 0;
+}
+
+.tagline,
+.nav,
+.footer,
+figcaption {
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+a {
+  color: #0000ee;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1.5rem 0;
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #999999;
+  display: block;
+}
+
+figcaption {
+  margin-top: 0.4rem;
+}
